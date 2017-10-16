@@ -66,6 +66,11 @@ async function main() {
       console.log('send')
       console.log('----------')
       currentVersion = newVersion
+
+      if (!DEV_MODE) {
+        // If not in DEV_MODE, also send to annie
+        sendToNotificationCenter({ userID: annieID })
+      }
       sendToNotificationCenter({ userID: larryID })
     }
   }, interval)
