@@ -1,7 +1,7 @@
 const cheerio = require('cheerio')
 const axios = require('axios')
 
-const DEV_MODE = true
+const DEV_MODE = false
 
 const SECOND = 1000
 const MINUTE = 60 * SECOND
