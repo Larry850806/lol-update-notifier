@@ -60,9 +60,11 @@ async function main() {
   setInterval(async () => {
     const newVersion = await getLatestVersion()
 
+    console.log('current version:', currentVersion)
+
     if (newVersion !== currentVersion) {
-      console.log(currentVersion)
-      console.log(newVersion)
+      console.log('current version:', currentVersion)
+      console.log('new version:', newVersion)
       console.log('send')
       console.log('----------')
       currentVersion = newVersion
