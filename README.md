@@ -10,7 +10,7 @@ This is a program that send lol update notification.
 
 2. run a container in background
 
-`docker run -d --name lol-update-notifier larry850806/lol-update-notifier-app`
+`docker run -d --restart=always --name lol-update-notifier larry850806/lol-update-notifier-app`
 
 ## How to publish newer image to dockerhub
 
