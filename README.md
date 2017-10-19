@@ -14,7 +14,7 @@ This is a program that send lol update notification.
 
 ## Using docker-compose
 
-```
+```yml
 lol-update-notifier:
     image: larry850806/lol-update-notifier-app
     container_name: lol-update-notifier
