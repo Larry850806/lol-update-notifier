@@ -12,6 +12,15 @@ This is a program that send lol update notification.
 
 `docker run -d --restart=always --name lol-update-notifier larry850806/lol-update-notifier-app`
 
+## Using docker-compose
+
+```
+lol-update-notifier:
+    image: larry850806/lol-update-notifier-app
+    container_name: lol-update-notifier
+    restart: always
+```
+
 ## How to publish newer image to dockerhub
 
 Just push to this github repo, dockerhub will build latest image automatically.
