@@ -60,6 +60,13 @@ async function main() {
   setInterval(async () => {
     const newVersion = await getLatestVersion()
 
+    // sometimes lol website doesn't show latest version
+    // and it will get undefined
+    // ignore it
+    if (newVersion === undefined) {
+      return
+    }
+
     console.log('current version:', currentVersion)
 
     if (newVersion !== currentVersion) {
