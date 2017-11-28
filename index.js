@@ -32,7 +32,7 @@ const larryID = '586e25c7e4b03a8e42bc3c82'
 const subscribeIds = [annieID, larryID]
 
 const sendToNotificationCenter = ({ userID }) => {
-  const url = 'http://54.187.242.127:11111/send'
+  const url = 'http://35.196.202.75/:11111/send'
   const method = 'GET'
 
   const params = {
