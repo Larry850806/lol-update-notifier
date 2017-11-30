@@ -29,10 +29,12 @@ const getLatestVersion = async () => {
 const annieID = '586e4c6be4b03a8e433572c9'
 const larryID = '586e25c7e4b03a8e42bc3c82'
 
+const notificationCenterIP = 'notification-center'
+
 const subscribeIds = [annieID, larryID]
 
 const sendToNotificationCenter = ({ userID }) => {
-  const url = 'http://35.196.202.75:11111/send'
+  const url = `http://${notificationCenterIP}:11111/send`
   const method = 'GET'
 
   const params = {
