@@ -48,8 +48,7 @@ const sendToNotificationCenter = ({ userID }) => {
 }
 
 sendToNotificationCenter({ userID: larryID })
-sendToNotificationCenter({ userID: larryID })
-sendToNotificationCenter({ userID: larryID })
+sendToNotificationCenter({ userID: annieID })
 
 async function main() {
   let currentVersion = await getLatestVersion()
