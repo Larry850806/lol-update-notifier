@@ -4,7 +4,8 @@ clone:
     depath: 50
 
 pipeline:
-  node:
-    image: node:latest
+  install_dependencies:
+    image: node:9.2.0
+    pull: true
     commands:
       - yarn install
