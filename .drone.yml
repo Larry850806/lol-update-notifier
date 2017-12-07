@@ -1,0 +1,5 @@
+pipeline:
+  node:
+    image: node:latest
+    commands:
+      - yarn install
